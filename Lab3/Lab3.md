@@ -6,7 +6,9 @@
 
 2. [GitDiff](images/GitDiff.png)
 
+4. https://github.com/zwimer/courseproject
 
+5. https://github.com/zwimer/NewStory
 
 afgana@rpi.edu
 
