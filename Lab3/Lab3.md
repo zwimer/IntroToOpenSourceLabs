@@ -1,4 +1,4 @@
-2. https://github.com/zwimer/IntroToOpenSourceLabs/tree/master/Lab3/lab3part1 
+2. https://github.com/zwimer/IntroToOpenSourceLabs/tree/mars/Lab3 
 
 6. [GitK](images/Gitk.png) [GitLog](images/GitLog.png) 
 
