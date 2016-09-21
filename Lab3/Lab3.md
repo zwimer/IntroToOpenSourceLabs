@@ -8,7 +8,7 @@
 
 4. https://github.com/zwimer/courseproject
 
-5. https://github.com/zwimer/NewStory
+5. https://github.com/zwimer/Story-Fall2016 
 
 afgana@rpi.edu
 
