@@ -4,4 +4,4 @@
 
 3. From this lab I have learned just how many people work on maintaining documentation for FreeBSD, and just how I can contribute to this community.
 
-4. The link: Ask foxes2 
+4. [Bug](https://bugs.freebsd.org/bugzilla/show_bug.cgi?id=212934)
