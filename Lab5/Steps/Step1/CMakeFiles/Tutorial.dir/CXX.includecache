@@ -1,0 +1,20 @@
+#IncludeRegexLine: ^[ 	]*#[ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/Users/zwimer/School/Intro to Open Source/Labs/Lab5/Steps/Step1/TutorialConfig.h
+
+/Users/zwimer/School/Intro to Open Source/Labs/Lab5/Steps/Step1/main.cpp
+stdio.h
+-
+stdlib.h
+-
+math.h
+-
+TutorialConfig.h
+/Users/zwimer/School/Intro to Open Source/Labs/Lab5/Steps/Step1/TutorialConfig.h
+

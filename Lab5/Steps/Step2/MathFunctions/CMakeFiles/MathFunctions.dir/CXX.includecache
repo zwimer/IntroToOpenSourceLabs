@@ -1,0 +1,12 @@
+#IncludeRegexLine: ^[ 	]*#[ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/Users/zwimer/School/Intro to Open Source/Labs/Lab5/Steps/Step2/MathFunctions/mysqrt.cpp
+math.h
+-
+
