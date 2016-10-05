@@ -5,11 +5,6 @@ project (Tutorial)
 set (Tutorial_VERSION_MAJOR 1)
 set (Tutorial_VERSION_MINOR 0)
 
-#-----------------Check functions exist-----------------
-
-
-
-
 #------------------------Options------------------------
 
 option (USE_MYMATH "Use totorial provided math implementation" ON)
@@ -65,6 +60,17 @@ install (FILES "${PROJECT_BINARY_DIR}/TutorialConfig.h"
 		 DESTINATION include)
 
  #-------------------------CTest-------------------------
+
+ #Does the app run?
+ add_test (TutorialRuns Tutorial 25)
+
+ #Does usage print?
+ add_test (TutorialUsage Tutorial)
+ set_tests_properties (TutorialUsage
+	 PROPERTIES
+	 PASS_REGULAR_EXPRESSION "Usage:.*number"
+	 )
+
 
 #define a macro to simplify adding tests, then use it
 macro (do_test arg result)

@@ -48,35 +48,13 @@ RM = /usr/local/Cellar/cmake/3.6.2/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = "/Users/zwimer/School/Intro to Open Source/Labs/Lab5/Steps/Step4"
+CMAKE_SOURCE_DIR = "/Users/zwimer/School/Intro to Open Source/Labs/Lab5/Steps/Step5"
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = "/Users/zwimer/School/Intro to Open Source/Labs/Lab5/Steps/Step4"
+CMAKE_BINARY_DIR = "/Users/zwimer/School/Intro to Open Source/Labs/Lab5/Steps/Step5"
 
 #=============================================================================
 # Targets provided globally by CMake.
-
-# Special rule for the target test
-test:
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running tests..."
-	/usr/local/Cellar/cmake/3.6.2/bin/ctest --force-new-ctest-process $(ARGS)
-.PHONY : test
-
-# Special rule for the target test
-test/fast: test
-
-.PHONY : test/fast
-
-# Special rule for the target install/local
-install/local: preinstall
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Installing only the local directory..."
-	/usr/local/Cellar/cmake/3.6.2/bin/cmake -DCMAKE_INSTALL_LOCAL_ONLY=1 -P cmake_install.cmake
-.PHONY : install/local
-
-# Special rule for the target install/local
-install/local/fast: install/local
-
-.PHONY : install/local/fast
 
 # Special rule for the target edit_cache
 edit_cache:
@@ -122,16 +100,38 @@ install/fast: preinstall/fast
 	/usr/local/Cellar/cmake/3.6.2/bin/cmake -P cmake_install.cmake
 .PHONY : install/fast
 
+# Special rule for the target test
+test:
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running tests..."
+	/usr/local/Cellar/cmake/3.6.2/bin/ctest --force-new-ctest-process $(ARGS)
+.PHONY : test
+
+# Special rule for the target test
+test/fast: test
+
+.PHONY : test/fast
+
+# Special rule for the target install/local
+install/local: preinstall
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Installing only the local directory..."
+	/usr/local/Cellar/cmake/3.6.2/bin/cmake -DCMAKE_INSTALL_LOCAL_ONLY=1 -P cmake_install.cmake
+.PHONY : install/local
+
+# Special rule for the target install/local
+install/local/fast: install/local
+
+.PHONY : install/local/fast
+
 # The main all target
 all: cmake_check_build_system
-	cd "/Users/zwimer/School/Intro to Open Source/Labs/Lab5/Steps/Step4" && $(CMAKE_COMMAND) -E cmake_progress_start "/Users/zwimer/School/Intro to Open Source/Labs/Lab5/Steps/Step4/CMakeFiles" "/Users/zwimer/School/Intro to Open Source/Labs/Lab5/Steps/Step4/MathFunctions/CMakeFiles/progress.marks"
-	cd "/Users/zwimer/School/Intro to Open Source/Labs/Lab5/Steps/Step4" && $(MAKE) -f CMakeFiles/Makefile2 MathFunctions/all
-	$(CMAKE_COMMAND) -E cmake_progress_start "/Users/zwimer/School/Intro to Open Source/Labs/Lab5/Steps/Step4/CMakeFiles" 0
+	cd "/Users/zwimer/School/Intro to Open Source/Labs/Lab5/Steps/Step5" && $(CMAKE_COMMAND) -E cmake_progress_start "/Users/zwimer/School/Intro to Open Source/Labs/Lab5/Steps/Step5/CMakeFiles" "/Users/zwimer/School/Intro to Open Source/Labs/Lab5/Steps/Step5/MathFunctions/CMakeFiles/progress.marks"
+	cd "/Users/zwimer/School/Intro to Open Source/Labs/Lab5/Steps/Step5" && $(MAKE) -f CMakeFiles/Makefile2 MathFunctions/all
+	$(CMAKE_COMMAND) -E cmake_progress_start "/Users/zwimer/School/Intro to Open Source/Labs/Lab5/Steps/Step5/CMakeFiles" 0
 .PHONY : all
 
 # The main clean target
 clean:
-	cd "/Users/zwimer/School/Intro to Open Source/Labs/Lab5/Steps/Step4" && $(MAKE) -f CMakeFiles/Makefile2 MathFunctions/clean
+	cd "/Users/zwimer/School/Intro to Open Source/Labs/Lab5/Steps/Step5" && $(MAKE) -f CMakeFiles/Makefile2 MathFunctions/clean
 .PHONY : clean
 
 # The main clean target
@@ -141,22 +141,22 @@ clean/fast: clean
 
 # Prepare targets for installation.
 preinstall: all
-	cd "/Users/zwimer/School/Intro to Open Source/Labs/Lab5/Steps/Step4" && $(MAKE) -f CMakeFiles/Makefile2 MathFunctions/preinstall
+	cd "/Users/zwimer/School/Intro to Open Source/Labs/Lab5/Steps/Step5" && $(MAKE) -f CMakeFiles/Makefile2 MathFunctions/preinstall
 .PHONY : preinstall
 
 # Prepare targets for installation.
 preinstall/fast:
-	cd "/Users/zwimer/School/Intro to Open Source/Labs/Lab5/Steps/Step4" && $(MAKE) -f CMakeFiles/Makefile2 MathFunctions/preinstall
+	cd "/Users/zwimer/School/Intro to Open Source/Labs/Lab5/Steps/Step5" && $(MAKE) -f CMakeFiles/Makefile2 MathFunctions/preinstall
 .PHONY : preinstall/fast
 
 # clear depends
 depend:
-	cd "/Users/zwimer/School/Intro to Open Source/Labs/Lab5/Steps/Step4" && $(CMAKE_COMMAND) -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
+	cd "/Users/zwimer/School/Intro to Open Source/Labs/Lab5/Steps/Step5" && $(CMAKE_COMMAND) -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
 .PHONY : depend
 
 # Convenience name for target.
 MathFunctions/CMakeFiles/MathFunctions.dir/rule:
-	cd "/Users/zwimer/School/Intro to Open Source/Labs/Lab5/Steps/Step4" && $(MAKE) -f CMakeFiles/Makefile2 MathFunctions/CMakeFiles/MathFunctions.dir/rule
+	cd "/Users/zwimer/School/Intro to Open Source/Labs/Lab5/Steps/Step5" && $(MAKE) -f CMakeFiles/Makefile2 MathFunctions/CMakeFiles/MathFunctions.dir/rule
 .PHONY : MathFunctions/CMakeFiles/MathFunctions.dir/rule
 
 # Convenience name for target.
@@ -166,8 +166,50 @@ MathFunctions: MathFunctions/CMakeFiles/MathFunctions.dir/rule
 
 # fast build rule for target.
 MathFunctions/fast:
-	cd "/Users/zwimer/School/Intro to Open Source/Labs/Lab5/Steps/Step4" && $(MAKE) -f MathFunctions/CMakeFiles/MathFunctions.dir/build.make MathFunctions/CMakeFiles/MathFunctions.dir/build
+	cd "/Users/zwimer/School/Intro to Open Source/Labs/Lab5/Steps/Step5" && $(MAKE) -f MathFunctions/CMakeFiles/MathFunctions.dir/build.make MathFunctions/CMakeFiles/MathFunctions.dir/build
 .PHONY : MathFunctions/fast
+
+# Convenience name for target.
+MathFunctions/CMakeFiles/MakeTable.dir/rule:
+	cd "/Users/zwimer/School/Intro to Open Source/Labs/Lab5/Steps/Step5" && $(MAKE) -f CMakeFiles/Makefile2 MathFunctions/CMakeFiles/MakeTable.dir/rule
+.PHONY : MathFunctions/CMakeFiles/MakeTable.dir/rule
+
+# Convenience name for target.
+MakeTable: MathFunctions/CMakeFiles/MakeTable.dir/rule
+
+.PHONY : MakeTable
+
+# fast build rule for target.
+MakeTable/fast:
+	cd "/Users/zwimer/School/Intro to Open Source/Labs/Lab5/Steps/Step5" && $(MAKE) -f MathFunctions/CMakeFiles/MakeTable.dir/build.make MathFunctions/CMakeFiles/MakeTable.dir/build
+.PHONY : MakeTable/fast
+
+MakeTable.o: MakeTable.cpp.o
+
+.PHONY : MakeTable.o
+
+# target to build an object file
+MakeTable.cpp.o:
+	cd "/Users/zwimer/School/Intro to Open Source/Labs/Lab5/Steps/Step5" && $(MAKE) -f MathFunctions/CMakeFiles/MakeTable.dir/build.make MathFunctions/CMakeFiles/MakeTable.dir/MakeTable.cpp.o
+.PHONY : MakeTable.cpp.o
+
+MakeTable.i: MakeTable.cpp.i
+
+.PHONY : MakeTable.i
+
+# target to preprocess a source file
+MakeTable.cpp.i:
+	cd "/Users/zwimer/School/Intro to Open Source/Labs/Lab5/Steps/Step5" && $(MAKE) -f MathFunctions/CMakeFiles/MakeTable.dir/build.make MathFunctions/CMakeFiles/MakeTable.dir/MakeTable.cpp.i
+.PHONY : MakeTable.cpp.i
+
+MakeTable.s: MakeTable.cpp.s
+
+.PHONY : MakeTable.s
+
+# target to generate assembly for a file
+MakeTable.cpp.s:
+	cd "/Users/zwimer/School/Intro to Open Source/Labs/Lab5/Steps/Step5" && $(MAKE) -f MathFunctions/CMakeFiles/MakeTable.dir/build.make MathFunctions/CMakeFiles/MakeTable.dir/MakeTable.cpp.s
+.PHONY : MakeTable.cpp.s
 
 mysqrt.o: mysqrt.cpp.o
 
@@ -175,7 +217,7 @@ mysqrt.o: mysqrt.cpp.o
 
 # target to build an object file
 mysqrt.cpp.o:
-	cd "/Users/zwimer/School/Intro to Open Source/Labs/Lab5/Steps/Step4" && $(MAKE) -f MathFunctions/CMakeFiles/MathFunctions.dir/build.make MathFunctions/CMakeFiles/MathFunctions.dir/mysqrt.cpp.o
+	cd "/Users/zwimer/School/Intro to Open Source/Labs/Lab5/Steps/Step5" && $(MAKE) -f MathFunctions/CMakeFiles/MathFunctions.dir/build.make MathFunctions/CMakeFiles/MathFunctions.dir/mysqrt.cpp.o
 .PHONY : mysqrt.cpp.o
 
 mysqrt.i: mysqrt.cpp.i
@@ -184,7 +226,7 @@ mysqrt.i: mysqrt.cpp.i
 
 # target to preprocess a source file
 mysqrt.cpp.i:
-	cd "/Users/zwimer/School/Intro to Open Source/Labs/Lab5/Steps/Step4" && $(MAKE) -f MathFunctions/CMakeFiles/MathFunctions.dir/build.make MathFunctions/CMakeFiles/MathFunctions.dir/mysqrt.cpp.i
+	cd "/Users/zwimer/School/Intro to Open Source/Labs/Lab5/Steps/Step5" && $(MAKE) -f MathFunctions/CMakeFiles/MathFunctions.dir/build.make MathFunctions/CMakeFiles/MathFunctions.dir/mysqrt.cpp.i
 .PHONY : mysqrt.cpp.i
 
 mysqrt.s: mysqrt.cpp.s
@@ -193,7 +235,7 @@ mysqrt.s: mysqrt.cpp.s
 
 # target to generate assembly for a file
 mysqrt.cpp.s:
-	cd "/Users/zwimer/School/Intro to Open Source/Labs/Lab5/Steps/Step4" && $(MAKE) -f MathFunctions/CMakeFiles/MathFunctions.dir/build.make MathFunctions/CMakeFiles/MathFunctions.dir/mysqrt.cpp.s
+	cd "/Users/zwimer/School/Intro to Open Source/Labs/Lab5/Steps/Step5" && $(MAKE) -f MathFunctions/CMakeFiles/MathFunctions.dir/build.make MathFunctions/CMakeFiles/MathFunctions.dir/mysqrt.cpp.s
 .PHONY : mysqrt.cpp.s
 
 # Help Target
@@ -202,13 +244,17 @@ help:
 	@echo "... all (the default if no target is provided)"
 	@echo "... clean"
 	@echo "... depend"
-	@echo "... test"
-	@echo "... install/local"
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
 	@echo "... list_install_components"
 	@echo "... install"
 	@echo "... MathFunctions"
+	@echo "... test"
+	@echo "... install/local"
+	@echo "... MakeTable"
+	@echo "... MakeTable.o"
+	@echo "... MakeTable.i"
+	@echo "... MakeTable.s"
 	@echo "... mysqrt.o"
 	@echo "... mysqrt.i"
 	@echo "... mysqrt.s"
@@ -223,6 +269,6 @@ help:
 # No rule that depends on this can have commands that come from listfiles
 # because they might be regenerated.
 cmake_check_build_system:
-	cd "/Users/zwimer/School/Intro to Open Source/Labs/Lab5/Steps/Step4" && $(CMAKE_COMMAND) -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
+	cd "/Users/zwimer/School/Intro to Open Source/Labs/Lab5/Steps/Step5" && $(CMAKE_COMMAND) -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
 .PHONY : cmake_check_build_system
 

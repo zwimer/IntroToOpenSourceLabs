@@ -497,3 +497,49 @@ Linking C executable cmTC_67412
 /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc   -DCHECK_FUNCTION_EXISTS=exp -Wl,-search_paths_first -Wl,-headerpad_max_install_names   CMakeFiles/cmTC_67412.dir/CheckFunctionExists.c.o  -o cmTC_67412  
 
 
+Determining if the function log exists passed with the following output:
+Change Dir: /Users/zwimer/School/Intro to Open Source/Labs/Lab5/Steps/Step5/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_15cc3/fast"
+/Applications/Xcode.app/Contents/Developer/usr/bin/make -f CMakeFiles/cmTC_15cc3.dir/build.make CMakeFiles/cmTC_15cc3.dir/build
+Building C object CMakeFiles/cmTC_15cc3.dir/CheckFunctionExists.c.o
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc    -DCHECK_FUNCTION_EXISTS=log   -o CMakeFiles/cmTC_15cc3.dir/CheckFunctionExists.c.o   -c /usr/local/Cellar/cmake/3.6.2/share/cmake/Modules/CheckFunctionExists.c
+/usr/local/Cellar/cmake/3.6.2/share/cmake/Modules/CheckFunctionExists.c:7:3: warning: incompatible redeclaration of library function 'log' [-Wincompatible-library-redeclaration]
+  CHECK_FUNCTION_EXISTS();
+  ^
+<command line>:1:31: note: expanded from here
+#define CHECK_FUNCTION_EXISTS log
+                              ^
+/usr/local/Cellar/cmake/3.6.2/share/cmake/Modules/CheckFunctionExists.c:7:3: note: 'log' is a builtin with type 'double (double)'
+<command line>:1:31: note: expanded from here
+#define CHECK_FUNCTION_EXISTS log
+                              ^
+1 warning generated.
+Linking C executable cmTC_15cc3
+/usr/local/Cellar/cmake/3.6.2/bin/cmake -E cmake_link_script CMakeFiles/cmTC_15cc3.dir/link.txt --verbose=1
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc   -DCHECK_FUNCTION_EXISTS=log -Wl,-search_paths_first -Wl,-headerpad_max_install_names   CMakeFiles/cmTC_15cc3.dir/CheckFunctionExists.c.o  -o cmTC_15cc3  
+
+
+Determining if the function exp exists passed with the following output:
+Change Dir: /Users/zwimer/School/Intro to Open Source/Labs/Lab5/Steps/Step5/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_06b7f/fast"
+/Applications/Xcode.app/Contents/Developer/usr/bin/make -f CMakeFiles/cmTC_06b7f.dir/build.make CMakeFiles/cmTC_06b7f.dir/build
+Building C object CMakeFiles/cmTC_06b7f.dir/CheckFunctionExists.c.o
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc    -DCHECK_FUNCTION_EXISTS=exp   -o CMakeFiles/cmTC_06b7f.dir/CheckFunctionExists.c.o   -c /usr/local/Cellar/cmake/3.6.2/share/cmake/Modules/CheckFunctionExists.c
+/usr/local/Cellar/cmake/3.6.2/share/cmake/Modules/CheckFunctionExists.c:7:3: warning: incompatible redeclaration of library function 'exp' [-Wincompatible-library-redeclaration]
+  CHECK_FUNCTION_EXISTS();
+  ^
+<command line>:1:31: note: expanded from here
+#define CHECK_FUNCTION_EXISTS exp
+                              ^
+/usr/local/Cellar/cmake/3.6.2/share/cmake/Modules/CheckFunctionExists.c:7:3: note: 'exp' is a builtin with type 'double (double)'
+<command line>:1:31: note: expanded from here
+#define CHECK_FUNCTION_EXISTS exp
+                              ^
+1 warning generated.
+Linking C executable cmTC_06b7f
+/usr/local/Cellar/cmake/3.6.2/bin/cmake -E cmake_link_script CMakeFiles/cmTC_06b7f.dir/link.txt --verbose=1
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc   -DCHECK_FUNCTION_EXISTS=exp -Wl,-search_paths_first -Wl,-headerpad_max_install_names   CMakeFiles/cmTC_06b7f.dir/CheckFunctionExists.c.o  -o cmTC_06b7f  
+
+

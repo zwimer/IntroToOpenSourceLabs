@@ -6,5 +6,5 @@ CXX_FLAGS =
 
 CXX_DEFINES = 
 
-CXX_INCLUDES = -I"/Users/zwimer/School/Intro to Open Source/Labs/Lab5/Steps/Step4" -I"/Users/zwimer/School/Intro to Open Source/Labs/Lab5/Steps/Step4/MathFunctions" 
+CXX_INCLUDES = -I"/Users/zwimer/School/Intro to Open Source/Labs/Lab5/Steps/Step5" -I"/Users/zwimer/School/Intro to Open Source/Labs/Lab5/Steps/Step5/MathFunctions" 
 

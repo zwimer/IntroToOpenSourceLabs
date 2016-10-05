@@ -6,7 +6,11 @@
 
 #IncludeRegexTransform: 
 
-/Users/zwimer/School/Intro to Open Source/Labs/Lab5/Steps/Step5/MathFunctions/mysqrt.cpp
+/Users/zwimer/School/Intro to Open Source/Labs/Lab5/Steps/Step5/MathFunctions/MakeTable.cpp
+stdio.h
+-
+stdlib.h
+-
 math.h
 -
 

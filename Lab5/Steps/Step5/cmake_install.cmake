@@ -1,4 +1,4 @@
-# Install script for directory: /Users/zwimer/School/Intro to Open Source/Labs/Lab5/Steps/Step4
+# Install script for directory: /Users/zwimer/School/Intro to Open Source/Labs/Lab5/Steps/Step5
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -28,16 +28,16 @@ if(NOT CMAKE_INSTALL_COMPONENT)
 endif()
 
 if("${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/bin" TYPE EXECUTABLE FILES "/Users/zwimer/School/Intro to Open Source/Labs/Lab5/Steps/Step4/Tutorial")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/bin" TYPE EXECUTABLE FILES "/Users/zwimer/School/Intro to Open Source/Labs/Lab5/Steps/Step5/Tutorial")
 endif()
 
 if("${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/include" TYPE FILE FILES "/Users/zwimer/School/Intro to Open Source/Labs/Lab5/Steps/Step4/TutorialConfig.h")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/include" TYPE FILE FILES "/Users/zwimer/School/Intro to Open Source/Labs/Lab5/Steps/Step5/TutorialConfig.h")
 endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for each subdirectory.
-  include("/Users/zwimer/School/Intro to Open Source/Labs/Lab5/Steps/Step4/MathFunctions/cmake_install.cmake")
+  include("/Users/zwimer/School/Intro to Open Source/Labs/Lab5/Steps/Step5/MathFunctions/cmake_install.cmake")
 
 endif()
 
@@ -49,5 +49,5 @@ endif()
 
 string(REPLACE ";" "\n" CMAKE_INSTALL_MANIFEST_CONTENT
        "${CMAKE_INSTALL_MANIFEST_FILES}")
-file(WRITE "/Users/zwimer/School/Intro to Open Source/Labs/Lab5/Steps/Step4/${CMAKE_INSTALL_MANIFEST}"
+file(WRITE "/Users/zwimer/School/Intro to Open Source/Labs/Lab5/Steps/Step5/${CMAKE_INSTALL_MANIFEST}"
      "${CMAKE_INSTALL_MANIFEST_CONTENT}")

@@ -1,4 +1,5 @@
 file(REMOVE_RECURSE
+  "Table.h"
   "CMakeFiles/MathFunctions.dir/mysqrt.cpp.o"
   "libMathFunctions.pdb"
   "libMathFunctions.a"

@@ -1,4 +1,4 @@
-# Install script for directory: /Users/zwimer/School/Intro to Open Source/Labs/Lab5/Steps/Step4/MathFunctions
+# Install script for directory: /Users/zwimer/School/Intro to Open Source/Labs/Lab5/Steps/Step5/MathFunctions
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -28,7 +28,7 @@ if(NOT CMAKE_INSTALL_COMPONENT)
 endif()
 
 if("${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/bin" TYPE STATIC_LIBRARY FILES "/Users/zwimer/School/Intro to Open Source/Labs/Lab5/Steps/Step4/MathFunctions/libMathFunctions.a")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/bin" TYPE STATIC_LIBRARY FILES "/Users/zwimer/School/Intro to Open Source/Labs/Lab5/Steps/Step5/MathFunctions/libMathFunctions.a")
   if(EXISTS "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/bin/libMathFunctions.a" AND
      NOT IS_SYMLINK "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/bin/libMathFunctions.a")
     execute_process(COMMAND "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/ranlib" "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/bin/libMathFunctions.a")
@@ -36,6 +36,6 @@ if("${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMP
 endif()
 
 if("${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/include" TYPE FILE FILES "/Users/zwimer/School/Intro to Open Source/Labs/Lab5/Steps/Step4/MathFunctions/mysqrt.hpp")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/include" TYPE FILE FILES "/Users/zwimer/School/Intro to Open Source/Labs/Lab5/Steps/Step5/MathFunctions/mysqrt.hpp")
 endif()
 

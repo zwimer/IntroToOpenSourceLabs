@@ -4,8 +4,8 @@
 
 
 # Configuration directories and files
-SourceDirectory: /Users/zwimer/School/Intro to Open Source/Labs/Lab5/Steps/Step4
-BuildDirectory: /Users/zwimer/School/Intro to Open Source/Labs/Lab5/Steps/Step4
+SourceDirectory: /Users/zwimer/School/Intro to Open Source/Labs/Lab5/Steps/Step5
+BuildDirectory: /Users/zwimer/School/Intro to Open Source/Labs/Lab5/Steps/Step5
 
 # Where to place the cost data store
 CostDataFile: 
@@ -33,7 +33,7 @@ ScpCommand: /usr/bin/scp
 NightlyStartTime: 00:00:00 EDT
 
 # Commands for the build/test/submit cycle
-ConfigureCommand: "/usr/local/Cellar/cmake/3.6.2/bin/cmake" "/Users/zwimer/School/Intro to Open Source/Labs/Lab5/Steps/Step4"
+ConfigureCommand: "/usr/local/Cellar/cmake/3.6.2/bin/cmake" "/Users/zwimer/School/Intro to Open Source/Labs/Lab5/Steps/Step5"
 MakeCommand: /usr/local/Cellar/cmake/3.6.2/bin/cmake --build . --config "${CTEST_CONFIGURATION_TYPE}" -- -i
 DefaultCTestConfigurationType: Release
 
